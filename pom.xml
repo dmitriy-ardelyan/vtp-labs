@@ -11,6 +11,8 @@
 
     <modules>
         <module>functional-auto-tests</module>
+        <module>core-web</module>
+        <module>core-test</module>
     </modules>
 
 </project>
