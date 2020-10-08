@@ -1,5 +1,6 @@
 package com.vtp.test.pages;
 
+import com.vtp.test.driver.Waits;
 import org.openqa.selenium.WebDriver;
 
 import java.util.Map;
@@ -11,7 +12,10 @@ public class ThreadPages {
 
     ThreadPages(WebDriver driver) {
         pageInstances = new ConcurrentHashMap<Class<?>, PageObject>();
-        pageBuilder = new PageBuilder().setDriver(driver);
+        //TODO move this magic number to a property file
+        Waits wait = new Waits(driver, 30);
+        pageBuilder = new PageBuilder().setDriver(driver).setWait(wait);
+
     }
 
     public <T extends PageObject> T get(Class<?> clazz) {

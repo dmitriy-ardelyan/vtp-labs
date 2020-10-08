@@ -13,6 +13,8 @@
         <module>functional-auto-tests</module>
         <module>core-web</module>
         <module>core-test</module>
+        <module>logging</module>
+        <module>assertions</module>
     </modules>
 
 </project>

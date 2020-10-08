@@ -21,6 +21,7 @@ public class WebTest {
         driver = new ChromeDriver();
         Pages.init(driver);
         //TODO Implement propert supplier class and read properties
+        driver.manage().window().maximize();
         driver.get("https://web.kpi.kharkov.ua/otp/ru/");
     }
 
