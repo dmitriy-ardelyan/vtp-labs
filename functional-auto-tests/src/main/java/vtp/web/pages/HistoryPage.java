@@ -1,0 +1,27 @@
+package vtp.web.pages;
+
+import com.vtp.test.annotations.PageIdentifier;
+import com.vtp.test.pages.PageObject;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HistoryPage extends PageObject {
+
+    @PageIdentifier
+    @FindBy(css = "h2.post-title")
+    private WebElement titleLabel;
+
+    @FindBy(xpath = "(//li[contains(@class,'4119')])[2]")
+    private WebElement aboutUseMenu;
+
+
+    public HistoryPage openAboutUsMenu() {
+        aboutUseMenu.click();
+        return this;
+    }
+
+    public String getPageTitle() {
+        return titleLabel.getText();
+    }
+}

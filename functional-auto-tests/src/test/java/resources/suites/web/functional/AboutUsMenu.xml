@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="About Us Menu" parallel="tests" thread-count="3">
+
+    <test name="Open History">
+        <classes>
+            <class name="functional.tests.HistoryTest"/>
+        </classes>
+    </test>
+
+    <test name="Open Contacts">
+        <classes>
+            <class name="functional.tests.ContactsPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Open Present Days">
+        <classes>
+            <class name="functional.tests.PresentDaysTest"/>
+        </classes>
+    </test>
+
+</suite>

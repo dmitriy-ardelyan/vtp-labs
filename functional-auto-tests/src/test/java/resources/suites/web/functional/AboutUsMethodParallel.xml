@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="About Us Menu Functional Tests" parallel="methods" thread-count="3">
+    <test name="Test-method test">
+        <classes>
+            <class name="functional.tests.PresentDaysTest"/>
+            <class name="functional.tests.ContactsPageTest"/>
+            <class name="functional.tests.HistoryTest"/>
+        </classes>
+    </test>
+</suite>

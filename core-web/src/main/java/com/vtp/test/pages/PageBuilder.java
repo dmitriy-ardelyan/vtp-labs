@@ -10,7 +10,7 @@ public class PageBuilder {
 
     public <T extends PageObject> T build(Class clazz) {
         T page = initPageAndResources(clazz);
-        PageFactory.initElements(driver, clazz);
+        PageFactory.initElements(driver, page);
         return page;
     }
 
