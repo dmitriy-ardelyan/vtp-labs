@@ -1,12 +1,12 @@
 package functional.tests;
 
+import com.vtp.test.DockerWebTestChrome;
 import com.vtp.test.Verify;
-import com.vtp.test.WebTest;
 import org.testng.annotations.Test;
 import vtp.web.steps.HistoryPageSteps;
 import vtp.web.steps.LandingPageSteps;
 
-public class HistoryTest extends WebTest {
+public class HistoryTest extends DockerWebTestChrome {
 
     @Test
     public void historyPageTest(){

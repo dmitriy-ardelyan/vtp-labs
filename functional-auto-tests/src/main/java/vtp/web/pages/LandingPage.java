@@ -25,14 +25,17 @@ public class LandingPage extends PageObject {
     }
 
     public void selectHistoryOption() {
+        wait.waitReady(5000);
         driver.findElements(By.xpath(HISTORY_XPATH)).get(1).click();
     }
 
     public void selectPresentDaysOption() {
+        wait.waitReady(5000);
         driver.findElements(By.xpath(PRESENT_DAYS_XPATH)).get(1).click();
     }
 
     public void selectContactsOption() {
+        wait.waitReady(5000);
         driver.findElements(By.xpath(CONTACTS_XPATH)).get(1).click();
     }
 }

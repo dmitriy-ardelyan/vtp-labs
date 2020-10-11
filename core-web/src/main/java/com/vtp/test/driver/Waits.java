@@ -21,4 +21,13 @@ public class Waits {
     public boolean isElementDisplayed(WebElement webElement) {
         return wait.until((WebDriver wd) -> webElement.isDisplayed());
     }
+
+    public void waitReady(int delay){
+        //TODO update this to be wait element is displayed by BY locator
+        try {
+            Thread.sleep(delay);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
