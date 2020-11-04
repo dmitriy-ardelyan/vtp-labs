@@ -14,6 +14,6 @@ public class PresentDaysTest extends WebTest {
         LandingPageSteps.visitPresentDaysPage();
         String actualTitle = PresentDaysPageSteps.getTitle();
         //TODO move expected result to data provider class
-        Verify.equals(actualTitle,"КАФЕДРА СЕГОДНЯ","Verify history page title");
+        Verify.equals(actualTitle,"КАФЕДРА В НАШИ ДНИ","Verify history page title");
     }
 }

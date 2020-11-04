@@ -16,11 +16,35 @@ public class LandingPage extends PageObject {
     @FindBy(xpath = "(//li[contains(@class,'4119')])[2]")
     private WebElement aboutUseMenu;
 
+    @FindBy(xpath = "(//li[contains(@class,'1276')])[2]")
+    private WebElement learningProcessMenu;
+
+    @FindBy(xpath = "(//li[contains(@class,'6987')])[2]")
+    private WebElement scheduleMenu;
+
+    @FindBy(xpath = "(//li[contains(@class,'6522')])[2]")
+    private WebElement lecturersSchedule;
+
     @FindBy(css = "h2.post-title")
     private WebElement titleLabel;
 
     public LandingPage openAboutUsMenu() {
         aboutUseMenu.click();
+        return this;
+    }
+
+    public LandingPage openLearningProcessMenu() {
+        learningProcessMenu.click();
+        return this;
+    }
+
+    public LandingPage openScheduleMenu() {
+        scheduleMenu.click();
+        return this;
+    }
+
+    public LandingPage openLecturersSchedulePage() {
+        lecturersSchedule.click();
         return this;
     }
 
