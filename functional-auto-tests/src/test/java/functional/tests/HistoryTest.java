@@ -10,6 +10,7 @@ public class HistoryTest extends WebTest {
 
     @Test
     public void historyPageTest(){
+
         LandingPageSteps.visitHistoryPage();
         String actualTitle = HistoryPageSteps.getTitle();
         //TODO move expected result to data provider class
