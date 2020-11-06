@@ -1,4 +1,4 @@
-package vtp.web.pages;
+package web.pages;
 
 import com.vtp.test.annotations.PageIdentifier;
 import com.vtp.test.pages.PageObject;

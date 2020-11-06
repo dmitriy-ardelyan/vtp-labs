@@ -1,11 +1,10 @@
 package functional.tests;
 
-import com.vtp.test.DockerWebTestFireFox;
 import com.vtp.test.Verify;
 import com.vtp.test.WebTest;
 import org.testng.annotations.Test;
-import vtp.web.steps.ContactsPageSteps;
-import vtp.web.steps.LandingPageSteps;
+import web.steps.ContactsPageSteps;
+import web.steps.LandingPageSteps;
 
 public class ContactsPageTest extends WebTest {
 

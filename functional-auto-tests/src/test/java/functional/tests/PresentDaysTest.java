@@ -3,9 +3,8 @@ package functional.tests;
 import com.vtp.test.Verify;
 import com.vtp.test.WebTest;
 import org.testng.annotations.Test;
-import vtp.web.steps.HistoryPageSteps;
-import vtp.web.steps.LandingPageSteps;
-import vtp.web.steps.PresentDaysPageSteps;
+import web.steps.LandingPageSteps;
+import web.steps.PresentDaysPageSteps;
 
 public class PresentDaysTest extends WebTest {
 

@@ -1,8 +1,7 @@
-package vtp.web.steps;
+package web.steps;
 
 import com.vtp.test.pages.Pages;
-import vtp.web.pages.ContactsPage;
-import vtp.web.pages.HistoryPage;
+import web.pages.ContactsPage;
 
 public class ContactsPageSteps {
 

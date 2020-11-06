@@ -1,7 +1,7 @@
-package vtp.web.steps;
+package web.steps;
 
 import com.vtp.test.pages.Pages;
-import vtp.web.pages.PresentDaysPage;
+import web.pages.PresentDaysPage;
 
 public class PresentDaysPageSteps {
 

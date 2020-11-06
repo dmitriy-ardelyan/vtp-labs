@@ -1,8 +1,7 @@
-package vtp.web.steps;
+package web.steps;
 
 import com.vtp.test.pages.Pages;
-import vtp.web.pages.HistoryPage;
-import vtp.web.pages.LandingPage;
+import web.pages.HistoryPage;
 
 public class HistoryPageSteps {
 

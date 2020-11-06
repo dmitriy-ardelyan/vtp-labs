@@ -1,12 +1,11 @@
-package vtp.web.pages;
+package web.pages;
 
 import com.vtp.test.annotations.PageIdentifier;
 import com.vtp.test.pages.PageObject;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HistoryPage extends PageObject {
+public class ContactsPage extends PageObject {
 
     @PageIdentifier
     @FindBy(css = "h2.post-title")
@@ -16,7 +15,7 @@ public class HistoryPage extends PageObject {
     private WebElement aboutUseMenu;
 
 
-    public HistoryPage openAboutUsMenu() {
+    public ContactsPage openAboutUsMenu() {
         aboutUseMenu.click();
         return this;
     }
